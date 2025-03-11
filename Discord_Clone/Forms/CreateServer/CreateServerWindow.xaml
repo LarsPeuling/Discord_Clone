@@ -10,6 +10,7 @@
         <Frame x:Name="CreateServerFrame"
                Background="#2B2D31"
                NavigationUIVisibility="Hidden" 
-               Navigated="ServerFrame_Navigated"/>
+               Navigated="CreateServerFrame_Navigated" 
+               />
     </Grid>
 </Window>

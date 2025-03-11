@@ -9,7 +9,7 @@
         <Style TargetType="Button">
             <Setter Property="Background" Value="#393B41"/>
             <Setter Property="BorderBrush" Value="#42454C"/>
-            <Setter Property="Foreground" Value="#FFFFFF"
+            <Setter Property="Foreground" Value="#FFFFFF"/>
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Padding" Value="10"/>
             <Setter Property="Template">

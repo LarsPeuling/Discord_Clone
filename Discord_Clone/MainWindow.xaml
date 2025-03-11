@@ -14,16 +14,17 @@
             Navigated="ServerFrame_Navigated"/>
 
 
-        <Button x:Name="btnProfile" Content="Profile" HorizontalAlignment="Left" Margin="10,990,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="9" Click="Button_Click_2" Foreground="White"/>
-        <Button x:Name="btnAddServer" Content="Add Server" HorizontalAlignment="Left" Margin="10,436,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="7" FontStyle="Normal" Click="btnAddServer_Click" Foreground="White" />
+        <Button x:Name="btnProfile" Content="Profile" HorizontalAlignment="Left" Margin="10,990,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="9" Click="Button_Click_2" Foreground="White" Background="#FF393B41"/>
+        <Button x:Name="btnAddServer" Content="Add Server" HorizontalAlignment="Left" Margin="10,436,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="7" FontStyle="Normal" Click="btnAddServer_Click" Foreground="White" Background="#FF393B41" />
 
         <Grid Margin="312,70,240,0">
-                <Frame x:Name="ChatContent" 
+            <Frame x:Name="ChatContent" 
                         Visibility="Hidden" 
                         Background="#FF313338"/>
         </Grid>
+        <StackPanel x:Name="ButtonContainer" Margin="10,55,1862,617"/>
 
-        
+
 
 
     </Grid>

@@ -19,11 +19,16 @@ namespace Discord_Clone.Forms.CreateServer
     /// </summary>
     public partial class CreateServerWindow : Window
     {
-        CreateServerPage csp = new CreateServerPage();
+        //CreateServerPage csp = new CreateServerPage();
         public CreateServerWindow()
         {
             InitializeComponent();
-            CreateServerFrame.Navigate(csp);
+            CreateServerFrame.Navigate(new CreateServerPage());
+        }
+
+        private void CreateServerFrame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
         }
     }
 }

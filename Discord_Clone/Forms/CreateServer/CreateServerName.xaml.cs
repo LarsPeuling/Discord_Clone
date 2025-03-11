@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Discord_Clone.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,18 @@ namespace Discord_Clone.Forms.CreateServer
     /// </summary>
     public partial class CreateServerName : Page
     {
+        ButtonManager btnManager = new ButtonManager();
         public CreateServerName()
         {
             InitializeComponent();
+            
+        }
+
+        
+
+        private void btnCreateServer_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonManager.AddButton(tbServerName.Text);
         }
     }
 }

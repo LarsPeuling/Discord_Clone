@@ -10,7 +10,7 @@
 
     <Grid>
 
-        <Rectangle HorizontalAlignment="Center" Height="70" Margin="0,334,0,0" Fill="#FF2B2D31" VerticalAlignment="Top" Width="439" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Center" Height="70" Margin="0,145,0,0" Fill="#FF2B2D31" VerticalAlignment="Top" Width="439" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -21,8 +21,8 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Button x:Name="btnCreateServer" Content="Create" HorizontalAlignment="Left" Margin="289,353,0,0" VerticalAlignment="Top" Background="#FF5865F2" Width="106" Height="29" FontFamily="Uni Sans CAPS" FontWeight="Bold" Foreground="White" BorderThickness="0" BorderBrush="#00707070"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="15,360,0,0" VerticalAlignment="Top" Background="#00DDDDDD" Foreground="White" BorderBrush="#00707070" Width="37" Height="14" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Uni Sans CAPS" FontSize="9" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Center" Height="40" Margin="0,265,0,0" TextWrapping="Wrap" Text="Server" VerticalAlignment="Top" Width="408" BorderBrush="#00ABADB3" Foreground="White" SelectionTextBrush="#FF1E1F22" Background="#FF1E1F22" FontFamily="Uni Sans CAPS" FontWeight="Bold" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnCreateServer" Content="Create" HorizontalAlignment="Left" Margin="289,164,0,0" VerticalAlignment="Top" Background="#FF5865F2" Width="106" Height="29" FontFamily="Uni Sans CAPS" FontWeight="Bold" Foreground="White" BorderThickness="0" BorderBrush="#00707070" Click="btnCreateServer_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="15,171,0,0" VerticalAlignment="Top" Background="#00DDDDDD" Foreground="White" BorderBrush="#00707070" Width="37" Height="14" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Uni Sans CAPS" FontSize="9" FontWeight="Bold"/>
+        <TextBox x:Name="tbServerName" HorizontalAlignment="Center" Height="40" Margin="0,34,0,0" TextWrapping="Wrap" Text="Server" VerticalAlignment="Top" Width="408" BorderBrush="#00ABADB3" Foreground="White" SelectionTextBrush="#FF1E1F22" Background="#FF1E1F22" FontFamily="Uni Sans CAPS" FontWeight="Bold" VerticalContentAlignment="Center"/>
     </Grid>
 </Page>

@@ -21,7 +21,7 @@ namespace Discord_Clone.Forms
     /// </summary>
     public partial class CreateServerPage : Page
     {
-        CreateServerWindow csw = new CreateServerWindow();
+        
         public CreateServerPage()
         {
             InitializeComponent();
@@ -30,10 +30,10 @@ namespace Discord_Clone.Forms
         private void btnCreateServer_Click(object sender, RoutedEventArgs e)
         {
             CreateServerName createServerName = new CreateServerName();
-            createServerName.Visibility = Visibility.Visible;
-            this.Visibility = Visibility.Hidden;
-            csw.CreateServerFrame.Navigate(createServerName);
-            
+            /*createServerName.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;*/
+            NavigationService.Navigate(createServerName);
+
         }
     }
 }

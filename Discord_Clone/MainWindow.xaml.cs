@@ -10,6 +10,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Discord_Clone.Forms;
 using Discord_Clone.Forms.CreateServer;
+using Discord_Clone.Models;
 
 namespace Discord_Clone
 {
@@ -22,8 +23,21 @@ namespace Discord_Clone
         {
             InitializeComponent();
             //ServerFrame.Navigate(new ServerPage());
+            ButtonManager.OnNewButtonCreated += AddButton;
         }
 
+        private void AddButton(string btnname)
+        {
+            Button btn = new Button
+            {
+                Content = btnname,
+                Width = 48,
+                Height = 48
+            };
+
+            MainWindow mw = new MainWindow();
+            mw.ButtonContainer.Children.Add(btn);
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
