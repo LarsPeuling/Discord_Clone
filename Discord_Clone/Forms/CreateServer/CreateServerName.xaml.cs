@@ -33,6 +33,8 @@ namespace Discord_Clone.Forms.CreateServer
         private void btnCreateServer_Click(object sender, RoutedEventArgs e)
         {
             ButtonManager.AddButton(tbServerName.Text);
+            NavigationService.GoBack();
+            
         }
     }
 }

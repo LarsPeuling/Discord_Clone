@@ -11,6 +11,7 @@ using System.Windows.Shapes;
 using Discord_Clone.Forms;
 using Discord_Clone.Forms.CreateServer;
 using Discord_Clone.Models;
+using Discord_Clone.Forms.Templates;
 
 namespace Discord_Clone
 {
@@ -19,6 +20,8 @@ namespace Discord_Clone
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private Dictionary<string, UserControl> generatedPages = new Dictionary<string, UserControl>();
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +31,8 @@ namespace Discord_Clone
 
         private void AddButton(string btnname)
         {
+            generatedPages[btnname] = new PageTemplate(btnname);
+
             Button btn = new Button
             {
                 Content = btnname,
@@ -35,8 +40,9 @@ namespace Discord_Clone
                 Height = 48
             };
 
-            MainWindow mw = new MainWindow();
-            mw.ButtonContainer.Children.Add(btn);
+            btn.Click += (s, e) => ServerFrame.Content = generatedPages[btnname];
+       
+            ButtonContainer.Children.Add(btn);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -66,7 +72,7 @@ namespace Discord_Clone
         {
             CreateServerWindow csw = new CreateServerWindow();
             csw.Show();
-            this.Close();
+            //this.Close();
 
         }
     }

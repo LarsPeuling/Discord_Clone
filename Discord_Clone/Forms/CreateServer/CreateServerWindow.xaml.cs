@@ -30,5 +30,10 @@ namespace Discord_Clone.Forms.CreateServer
         {
 
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

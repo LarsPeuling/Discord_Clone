@@ -12,5 +12,6 @@
                NavigationUIVisibility="Hidden" 
                Navigated="CreateServerFrame_Navigated" 
                />
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Height="23" Margin="21,337,0,0" VerticalAlignment="Top" Width="52" FontFamily="gg sans mono" FontWeight="Bold" Click="btnBack_Click"/>
     </Grid>
 </Window>
