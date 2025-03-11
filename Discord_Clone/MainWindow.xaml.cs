@@ -37,7 +37,8 @@ namespace Discord_Clone
             {
                 Content = btnname,
                 Width = 48,
-                Height = 48
+                Height = 48,
+                Margin = new Thickness(5)
             };
 
             btn.Click += (s, e) => ServerFrame.Content = generatedPages[btnname];

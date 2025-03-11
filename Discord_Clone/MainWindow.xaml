@@ -14,7 +14,7 @@
             Navigated="ServerFrame_Navigated"/>
 
 
-        <Button x:Name="btnProfile" Content="Profile" HorizontalAlignment="Left" Margin="10,990,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="9" Click="Button_Click_2" Foreground="White" Background="#FF393B41"/>
+        <Button x:Name="btnProfile" Content="Profile" HorizontalAlignment="Left" Margin="10,955,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="9" Click="Button_Click_2" Foreground="White" Background="#FF393B41"/>
         <Button x:Name="btnAddServer" Content="Add Server" HorizontalAlignment="Left" Margin="10,436,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="7" FontStyle="Normal" Click="btnAddServer_Click" Foreground="White" Background="#FF393B41" />
 
         
