@@ -21,15 +21,9 @@ namespace Discord_Clone
         public MainWindow()
         {
             InitializeComponent();
-            ServerFrame.Navigate(new ServerPage());
+            //ServerFrame.Navigate(new ServerPage());
         }
 
-        
-        private void OpenChat(ChatPage chat)
-        {
-            ChatContent.Visibility = Visibility.Visible;
-            ChatContent.Content = chat;
-        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
