@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Discord_Clone.Models
 {
-    internal class Status
+    public class Status
     {
+        public int UserId { get; set; }
+        public string Text { get; set; }
     }
 }

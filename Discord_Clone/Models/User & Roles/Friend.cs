@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Discord_Clone.Models
 {
-    internal class Friend
+    public class Friend
     {
+        public int Id { get; set; }
+        public User FriendedUser { get; set; }
     }
 }

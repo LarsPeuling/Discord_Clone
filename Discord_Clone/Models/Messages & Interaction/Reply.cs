@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Discord_Clone.Models.Messages___Interaction
 {
-    internal class Reply
+    public class Reply : Message
     {
     }
 }

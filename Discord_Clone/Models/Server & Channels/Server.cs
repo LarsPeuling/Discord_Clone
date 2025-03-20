@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Discord_Clone.Models.Server___Channels
 {
-    internal class Server
+    public class Server
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<Channel> Channels { get; set; }
     }
 }

@@ -7,20 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1064" Width="1920" Background="#1E1F22">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="917*"/>
+        </Grid.ColumnDefinitions>
         <Frame x:Name="ServerFrame" 
                Margin="72,22,0,0"
             Background="#2B2D31"
             NavigationUIVisibility="Hidden" 
-            Navigated="ServerFrame_Navigated"/>
+            Navigated="ServerFrame_Navigated" Grid.ColumnSpan="2"/>
 
 
         <Button x:Name="btnProfile" Content="Profile" HorizontalAlignment="Left" Margin="10,955,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="9" Click="Button_Click_2" Foreground="White" Background="#FF393B41"/>
         <Button x:Name="btnAddServer" Content="Add Server" HorizontalAlignment="Left" Margin="10,436,0,0" VerticalAlignment="Top" Height="48" Width="48" FontFamily="gg sans mono Bold" FontSize="7" FontStyle="Normal" Click="btnAddServer_Click" Foreground="White" Background="#FF393B41" />
 
-        
-        <StackPanel x:Name="ButtonContainer" Margin="10,55,1862,617">
-            
-        </StackPanel>
+
+        <StackPanel x:Name="ButtonContainer" Margin="10,55,28,617" ClipToBounds="True"/>
 
 
 

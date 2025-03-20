@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Discord_Clone.Models.User___Roles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +12,10 @@ namespace Discord_Clone.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public string Avatar { get; set; }
-        public string Status   { get; set; }
-        public List<User> Friends { get; set; }
+        public Avatar Avatar { get; set; }
+        public Status Status { get; set; }
+        public List<Friend> Friends { get; set; }
+        public Tag Tag { get; set; }
 
         public User() { }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Discord_Clone.Models.Server___Channels
 {
-    internal class Reaction
+    public class Reaction : Message
     {
     }
 }

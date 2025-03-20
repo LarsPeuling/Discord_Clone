@@ -36,9 +36,9 @@ namespace Discord_Clone
             Button btn = new Button
             {
                 Content = btnname,
-                Width = 48,
-                Height = 48,
-                Margin = new Thickness(5)
+                Width = 47,
+                Height = 47,
+                Margin = new Thickness(0,2,0,2)
             };
 
             btn.Click += (s, e) => ServerFrame.Content = generatedPages[btnname];
