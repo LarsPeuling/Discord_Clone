@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Discord_Clone.Models
 {
-    public class Message
+    public class Friend : User
     {
         public int Id { get; set; }
-        public string Text { get; set; }
-        public Participant Sender { get; set; }
-        
-        public Message() { }
+        public User FriendedUser { get; set; }
+
+        public Friend() { }
+        //public Friend() : base(int Id, string name, string email, status) { }
     }
+
 }

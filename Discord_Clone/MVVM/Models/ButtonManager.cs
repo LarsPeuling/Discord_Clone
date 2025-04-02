@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Discord_Clone.Models
+namespace Discord_Clone.MVVM.Models
 {
     public class ButtonManager
     {

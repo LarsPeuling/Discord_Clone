@@ -9,6 +9,7 @@ namespace Discord_Clone.Models
     public class Role
     {
         public int Id { get; set; }
+        public int ParticipantId { get; set; }
         public string Name { get; set; }
         public string Color { get; set; }
         public bool ViewChannel { get; set; }
@@ -21,7 +22,7 @@ namespace Discord_Clone.Models
         public bool ChangeNickname { get; set; }
         public bool ManageNickname { get; set; }
         public bool KickMember { get; set; }
-        public bool banMember { get; set; }
+        public bool BanMember { get; set; }
         public bool MentionAllRole { get; set; }
         public bool ManageMessage { get; set; }
 

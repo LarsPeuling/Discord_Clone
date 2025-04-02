@@ -11,6 +11,14 @@
   <ItemGroup>
     <None Remove="Fonts\ggsansmono-Bold.ttf" />
     <None Remove="Fonts\ggsansmono-Normal.ttf" />
+    <None Remove="Icons\send.png" />
+    <None Remove="Icons\server.png" />
+    <None Remove="Icons\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +28,9 @@
     <Resource Include="Fonts\ggsansmono-Normal.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Icons\send.png" />
+    <Resource Include="Icons\server.png" />
+    <Resource Include="Icons\user.png" />
   </ItemGroup>
 
   <ItemGroup>
