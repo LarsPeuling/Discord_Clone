@@ -10,8 +10,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Discord_Clone.Forms;
 using Discord_Clone.Forms.CreateServer;
-using Discord_Clone.Models;
 using Discord_Clone.Forms.Templates;
+using Discord_Clone.Models;
+using Discord_Clone.MVVM.Models;
+using Discord_Clone.MVVM.ViewModel;
 
 namespace Discord_Clone
 {
@@ -25,56 +27,95 @@ namespace Discord_Clone
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
             //ServerFrame.Navigate(new ServerPage());
-            ButtonManager.OnNewButtonCreated += AddButton;
+            //ButtonManager.OnNewButtonCreated += AddButton;
         }
-
-        private void AddButton(string btnname)
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            generatedPages[btnname] = new PageTemplate(btnname);
-
-            Button btn = new Button
+            if (e.LeftButton == MouseButtonState.Pressed)
             {
-                Content = btnname,
-                Width = 47,
-                Height = 47,
-                Margin = new Thickness(0,2,0,2)
-            };
-
-            btn.Click += (s, e) => ServerFrame.Content = generatedPages[btnname];
-       
-            ButtonContainer.Children.Add(btn);
+                DragMove();
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
 
-
-        private void ServerFrame_Navigated(object sender, NavigationEventArgs e)
+        private void btnMaximize_Click(object sender, RoutedEventArgs e)
         {
+            if (Application.Current.MainWindow.WindowState != WindowState.Maximized)
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Normal;
+            }
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-            
+            Application.Current.Shutdown();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-
+            Message m = new Message();
         }
 
-        private void btnAddServer_Click(object sender, RoutedEventArgs e)
-        {
-            CreateServerWindow csw = new CreateServerWindow();
-            csw.Show();
-            //this.Close();
 
-        }
+
+
+        /* private void AddButton(string btnname)
+         {
+             generatedPages[btnname] = new PageTemplate(btnname);
+
+             Button btn = new Button
+             {
+                 Content = btnname,
+                 Width = 47,
+                 Height = 47,
+                 Margin = new Thickness(0,2,0,2)
+             };
+
+             btn.Click += (s, e) => ServerFrame.Content = generatedPages[btnname];
+
+             ButtonContainer.Children.Add(btn);
+         }
+
+         private void Button_Click(object sender, RoutedEventArgs e)
+         {
+
+         }
+
+
+         private void ServerFrame_Navigated(object sender, NavigationEventArgs e)
+         {
+
+         }
+
+         private void Button_Click_1(object sender, RoutedEventArgs e)
+         {
+
+
+
+         }
+
+         private void Button_Click_2(object sender, RoutedEventArgs e)
+         {
+
+         }
+
+         private void btnAddServer_Click(object sender, RoutedEventArgs e)
+         {
+             CreateServerWindow csw = new CreateServerWindow();
+             csw.Show();
+             //this.Close();
+
+         }*/
     }
 }

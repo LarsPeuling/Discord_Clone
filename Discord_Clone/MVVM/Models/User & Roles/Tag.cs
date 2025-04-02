@@ -8,6 +8,7 @@ namespace Discord_Clone.Models.User___Roles
 {
     public class Tag
     {
+        public int Id { get; set; }
         public int UserId { get; set; }
         public string UserTag { get; set; }
         public Tag()
