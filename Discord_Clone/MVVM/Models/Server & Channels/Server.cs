@@ -14,6 +14,8 @@ namespace Discord_Clone.Models.Server___Channels
         public List<Channel> Channels { get; set; }
         public string ImageSource { get; set; } = "/Icons/server.png";
 
+        public string InviteLink { get; set; }
+
 
         public Server() { }
 

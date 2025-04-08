@@ -14,6 +14,10 @@ namespace Discord_Clone.MVVM.ViewModel
 {
     public class MainViewModel : ObservableObject
     {
+        /* Why I chose an observablecollection instead of a list
+         * Use an ObservableCollection<T> when you need data binding and automatic UI updates.
+         * Use a List<T> when you don’t need event notifications and just need a basic collection for general-purpose use.
+         */
         public ObservableCollection<Message> Messages { get; set; }
         public ObservableCollection<Participant> Participants { get; set; }
         public ObservableCollection<Server> Servers { get; set; }
